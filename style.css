@@ -3,7 +3,8 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(to right, #ff0000, #ff9900, #33cc33, #3399ff, #9900cc);
+        background: conic-gradient(from 180deg, rgb(251, 194, 235), rgb(166, 193, 238));
+    /* background: linear-gradient(to right, #ff0000, #ff9900, #33cc33, #3399ff, #9900cc); */
 }
 
 #grid-container {
