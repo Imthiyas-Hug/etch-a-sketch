@@ -45,7 +45,7 @@ function createGrid(size) {
             } else if (currentMode === 'rainbow') {
                 square.style.backgroundColor = getRandomColor();
             } else if (currentMode === 'eraser') {
-                square.style.backgroundColor = '#ffffff';
+                square.style.backgroundColor = 'rgba(255, 255, 255, 1)';
             }
         });
 
@@ -79,16 +79,6 @@ function getRandomColor() {
     const b = Math.floor(Math.random() * 256);
     return `rgb(${r}, ${g}, ${b})`;
 }
-const rainbowBtn = document.querySelector("#rainbowBtn");
-rainbowBtn.addEventListener("click", () => {
-    const squares = document.querySelectorAll('.grid-square');
-
-    squares.forEach(square => {
-        square.addEventListener("mouseover", () => {
-            square.style.backgroundColor = getRandomColor();
-        });
-    });
-});
 
 
 
